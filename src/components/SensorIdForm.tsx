@@ -33,7 +33,7 @@ export function SensorIdForm() {
 
     // Success - update store
     setSensorId(trimmedId);
-    setSensorState(result.data);
+    setSensorState(result.data!);
   }
 
   return (
