@@ -184,7 +184,7 @@ export function HistoryChart() {
                 labelFormatter={(label) =>
                   format(new Date(label), "MMM d, yyyy HH:mm:ss")
                 }
-                formatter={(value: number) => [`${value.toFixed(1)}°C`, "Temp"]}
+                formatter={(value) => [`${(value as number).toFixed(1)}°C`, "Temp"]}
               />
               <Line
                 type="monotone"
